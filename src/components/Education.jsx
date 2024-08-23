@@ -9,7 +9,7 @@ import styles from "./Education.module.css"
 function Education() {
   return (
     <section className="my-5">
-      <h2 className={`text-center ${styles.edu}`} >edu</h2> <hr />
+      <h2 className={`text-center ${styles.edu}`} >Education</h2> <hr />
       <div className="container">
         <div className="row">
          
