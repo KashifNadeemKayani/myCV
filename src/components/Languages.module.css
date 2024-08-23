@@ -1,0 +1,27 @@
+/* Add these if not already present */
+.skillsContainer {
+  margin: 0 auto;
+  width: 70%; /* 20% space on both sides */
+}
+
+
+.language{
+  width: 100vw;
+  background-color: black;
+  color: white;
+  padding: 1vmin;
+  padding-bottom: 1.5vmin;
+}
+
+.progressBarContainer {
+  margin-bottom: 20px;
+}
+
+.progressBar {
+  height: 1.5rem;
+}
+
+.listItem {
+  font-weight: bold;
+  margin-bottom: 10px;
+}

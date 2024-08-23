@@ -1,0 +1,37 @@
+.projectSection {
+  margin-top: 50px;
+  padding: 0 10vw; /* Same padding as the other sections */
+}
+.project{ 
+  width: 100vw;
+  background-color: black;
+  color: white;
+  padding: 0.9vmin;
+  padding-bottom: 1.5vmin;
+
+}
+
+.projectAccordion {
+  width: 100%; /* Ensure full width */
+  max-width: none; /* Remove the max-width constraint */
+  margin: 0 auto;
+}
+
+.certificateImage {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .projectSection {
+    padding: 0 10vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectSection {
+    padding: 0 5vw;
+  }
+}

@@ -1,0 +1,9 @@
+.heading{
+  width: 100vw;
+}
+/* Header.module.css */
+.profileImage {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
