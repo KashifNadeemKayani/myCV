@@ -23,6 +23,8 @@ function Education() {
   <a href={Matric} target="_blank" rel="noopener noreferrer">Click Here to Get Result Card</a>
   </div>
 
+
+
           <div className="col-md-4">
             <h4>Pak Turk Maarif International Schools and Colleges | Islamabad Pakistan</h4>
             <p>Pre-Engineering, FSc.<br />Secured 949/1100 (86.27%) marks.<br />Sep.2021 - May.2023</p>
