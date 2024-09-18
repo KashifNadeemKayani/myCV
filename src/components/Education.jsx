@@ -33,7 +33,9 @@ function Education() {
           <div className="col-md-4">
             <h4>National University of Sciences and Technology | Islamabad Pakistan</h4>
             <p>Mechanical Engineering, Bachelor of Engineering<br />Currently studying with a CGPA of 3.41<br />Sep.2023 - Present</p>
-            <a   href={transcript}   target="_blank"   rel="noopener noreferrer"  onClick={() => {alert("2nd Semester Transcript is not Available, Showing you 1st semester Transcript"); }}>
+            <a 
+              // href={transcript}   target="_blank"   rel="noopener noreferrer"  onClick={() => {alert("2nd Semester Transcript is not Available, Showing you 1st semester Transcript"); }}
+              >
                 Click Here to View Transcript
             </a>
 
