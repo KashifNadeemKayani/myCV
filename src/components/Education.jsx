@@ -1,7 +1,7 @@
 import React from 'react';
 import Matric from "./Matric.jpg"
 import Fsc from './HSSC.jpg'
-import transcript from './Transcript.jpg'
+import transcript from './Transcript.png'
 import styles from "./Education.module.css"
 
 
