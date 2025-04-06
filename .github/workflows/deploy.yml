@@ -26,7 +26,8 @@ jobs:
         run: npm run build
 
       - name: Upload production-ready build files
-        uses: actions/download-artifact@v3
+        uses: actions/upload-artifact@3e65b8d49f3f5290e6c2e0321077d6a5c5d7c4e2
+
         with:
           name: production-files
           path: ./dist
@@ -39,7 +40,8 @@ jobs:
 
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@3d5ee9789f408bc1d4e282316298e46f40936a69
+
         with:
           name: production-files
           path: ./dist
