@@ -25,11 +25,14 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Debug: List dist contents
+        run: ls -R dist
+
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
         with:
           name: production-files
-          path: dist # Removed './' for portability
+          path: dist
 
   deploy:
     name: Deploy
