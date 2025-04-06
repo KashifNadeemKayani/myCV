@@ -25,7 +25,7 @@ jobs:
       - name: Build the project
         run: npm run build
 
-      - name: Debug: Check if dist exists
+      - name: Debug Check if dist exists
         run: |
           if [ -d dist ]; then
             echo "✅ dist directory found:"
