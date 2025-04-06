@@ -7,6 +7,7 @@ on:
 
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
 
     steps:
@@ -25,19 +26,20 @@ jobs:
         run: npm run build
 
       - name: Upload production-ready build files
-        uses: actions/upload-artifact@61c89b22acdf8c5e7c5f02c8a81e7d2ff978b1a2
+        uses: actions/upload-artifact@v4
         with:
           name: production-files
           path: ./dist
 
   deploy:
+    name: Deploy
     needs: build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
 
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@4dbef11f540c81596baefba6f3d75c72e5c34d84
+        uses: actions/download-artifact@v4
         with:
           name: production-files
           path: ./dist
