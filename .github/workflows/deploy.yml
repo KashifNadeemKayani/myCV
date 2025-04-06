@@ -36,7 +36,7 @@ jobs:
           fi
 
       - name: Upload production build artifacts
-        uses: actions/upload-artifact@v3.1.2
+        uses: actions/upload-artifact@9c3aeb48a8d9c1dd0c479264f595e75f6e9f9e43
         with:
           name: production-files
           path: dist
@@ -51,7 +51,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Download artifact
-        uses: actions/download-artifact@v3.0.2
+        uses: actions/download-artifact@fc57f57e1c82f377b66184e95e2c8a9e4ff4a9f2
         with:
           name: production-files
           path: dist
