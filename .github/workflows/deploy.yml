@@ -25,7 +25,7 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Debug: List dist contents
+      - name: Debug List dist contents
         run: ls -R dist
 
       - name: Upload production-ready build files
