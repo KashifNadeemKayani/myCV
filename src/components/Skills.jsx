@@ -18,7 +18,7 @@ function Skills() {
 
           <li className={`list-group-item ${styles.listItem}`}>Front-end Web Development</li>
           <div className={`${styles.progressBarContainer} progress`} role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-            <div className={`progress-bar progress-bar-striped progress-bar-animated ${styles.progressBar}`} style={{ width: '55%' }}></div>
+            <div className={`progress-bar progress-bar-striped progress-bar-animated ${styles.progressBar}`} style={{ width: '85%' }}></div>
           </div>
 
           <li className={`list-group-item ${styles.listItem}`}>Machine Parts and their Working</li>
