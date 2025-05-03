@@ -4,6 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min'; // Import Bootstrap JS
 import styles from './Project.module.css'; // Import your custom CSS
 import KT from './KT Hatori.jpg'; // Import images
 import AKDC from './AKDC.jpg';
+import AKDCNationals from './ADKCnationals.jpg';
 
 const Project = () => {
   return (
@@ -32,7 +33,7 @@ const Project = () => {
               aria-labelledby="endSemesterHeading"
               data-bs-parent="#endSemesterProjects"
             >
-              <div className="accordion-body">
+              {/* <div className="accordion-body">
                 <strong>Project 1:</strong> Worked as a team named <b>FAKHTA</b> in the <b>KT Hatori Design Challenge</b> in the first semester, making a glider that covers the most distance by gliding. Our glider achieved the highest range by covering 1244cms.
                 <br />
                 <hr />
@@ -47,7 +48,37 @@ const Project = () => {
                     2nd Semester: AKDC
                   </a>
                 </div>
-              </div>
+              </div> */}
+              <div className="accordion-body">
+  <strong>Project 1:</strong> Worked as a team named <b>FAKHTA</b> in the <b>KT Hatori Design Challenge</b> in the first semester, making a glider that covers the most distance by gliding. Our glider achieved the highest range by covering 1244cms.
+  <br />
+  <hr />
+  <strong>Project 2:</strong> Worked as a team in the <b>Abul Kalam Design Challenge</b> by designing an obstacle-detecting, repeatable vehicle. Our team got 1st position in AKDC as well.
+  <br />
+  <hr />
+  <strong>Project 3:</strong> Participated in the <b>AKDC Nationals</b> held at <b>UET Taxila</b>, where we finished in the <b>top 4</b>. The challenge was to design a mechanical autonomous car without any electrical components.
+  
+
+  <br />
+  <br />
+  
+  <div className="mt-3">
+    <h5>Certificates:</h5>
+    <a href={KT} target="_blank" rel="noopener noreferrer" className={`${styles.certificateImage} img-fluid`}>
+      1st Semester: KT Hatori Design Challenge
+    </a>
+    <br />
+    <a href={AKDC} target="_blank" rel="noopener noreferrer" className={`${styles.certificateImage} img-fluid`}>
+      2nd Semester: AKDC
+    </a>
+    {/* Optional: Add a certificate link for AKDC Nationals if you have one */}
+    <br />
+    <a href={AKDCNationals} target="_blank" rel="noopener noreferrer" className={`${styles.certificateImage} img-fluid`}>
+      AKDC Nationals: UET Taxila
+    </a>
+  </div>
+</div>
+
             </div>
           </div>
         </div>
