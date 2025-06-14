@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from "./Header.module.css";
-import pic from './Picc.jpg'
+import pic from './Picccc.jpg'
 
 function Header() {
   return (

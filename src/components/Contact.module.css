@@ -1,8 +1,11 @@
-
-.contact{
+.contact {
   width: 100vw;
   background-color: black;
   color: white;
   padding: 1vmin;
   padding-bottom: 1.5vmin;
+}
+
+.address {
+  padding-left: 10px;
 }
