@@ -51,7 +51,7 @@
 // export default Education;
 
 
-import React from 'react';
+// import React from 'react';
 import Matric from "./Matric.jpg";
 import Fsc from './HSSC.jpg';
 import transcript from './Transcript.png';
