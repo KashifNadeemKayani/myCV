@@ -21,8 +21,6 @@
 
 // export default Header;
 
-
-
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from "./Header.module.css";
@@ -31,10 +29,26 @@ import pic from './picccc.jpg';
 function Header() {
   const [isZoomed, setIsZoomed] = useState(false);
 
-  // Lock scroll when image is zoomed
+  // Scroll and ESC key behavior
   useEffect(() => {
+    // Scroll lock
     document.body.style.overflow = isZoomed ? 'hidden' : 'auto';
     document.body.style.touchAction = isZoomed ? 'none' : 'auto';
+
+    // ESC key listener
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        setIsZoomed(false);
+      }
+    };
+
+    if (isZoomed) {
+      window.addEventListener("keydown", handleKeyDown);
+    }
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
   }, [isZoomed]);
 
   return (
@@ -52,19 +66,18 @@ function Header() {
         <p className="mt-2">Driven to innovate and eager to make an impact.</p>
       </div>
 
-     {isZoomed && (
-  <div className={styles.overlay}>
-    <div className={styles.zoomWrapper}>
-      <button className={styles.closeButton} onClick={() => setIsZoomed(false)}>×</button>
-      <img
-        src={pic}
-        alt="Zoomed"
-        className={`rounded-circle ${styles.profileImage} ${styles.zoomed}`}
-      />
-    </div>
-  </div>
-)}
-
+      {isZoomed && (
+        <div className={styles.overlay}>
+          <div className={styles.zoomWrapper}>
+            <button className={styles.closeButton} onClick={() => setIsZoomed(false)}>×</button>
+            <img
+              src={pic}
+              alt="Zoomed"
+              className={`rounded-circle ${styles.profileImage} ${styles.zoomed}`}
+            />
+          </div>
+        </div>
+      )}
     </header>
   );
 }
