@@ -1,29 +1,4 @@
-/* .profileImage {
-  width: 150px;
-  height: 150px;
-  object-fit: contain;
-  transition: transform 0.4s ease-in-out;
-  z-index: 1;
-}
-
-.imageContainer {
-  overflow: visible; 
-  display: inline-block;
-  position: relative;
-}
-
-.profileImage:hover {
-  transform: scale(2);
-  z-index: 10;
-
-
-  transform: scale(1.7);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-
-
-
-} */
-.imageContainer {
+ .imageContainer {
   position: relative;
   display: inline-block;
 }
@@ -37,13 +12,13 @@
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* Only apply when class is present */
+
 .hoverEffect:hover {
   transform: scale(1.5);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
-/* Fullscreen overlay */
+
 .overlay {
   position: fixed;
   top: 0;
@@ -57,7 +32,7 @@
   align-items: center;
 }
 
-/* Zoomed image style */
+
 .zoomed {
   transform: scale(5);
   position: fixed;
@@ -69,7 +44,7 @@
   z-index: 10000;
 }
 
-/* Close button */
+
 .closeButton {
   position: fixed;
   top: 30px;
@@ -81,7 +56,7 @@
   cursor: pointer;
   z-index: 10001;
 }
-/* Close button styling */
+
 .closeButton {
   position: fixed;
   top: 20px;
@@ -104,7 +79,7 @@
   transform: scale(1.1);
 }
 
-/* Zoomed image style (already present) */
+
 .zoomed {
   transform: translate(-50%, -50%) scale(5);
   position: fixed;
@@ -119,10 +94,10 @@
   object-fit: contain;
 }
 
-/* Responsive handling */
+
 @media (max-width: 600px) {
   .zoomed {
-    transform: translate(-50%, -50%) scale(5.2); /* Slightly smaller on small screens */
+    transform: translate(-50%, -50%) scale(5.2); 
   }
 
   .closeButton {
@@ -138,7 +113,7 @@
     height: 120px;
   }
 }
-/* Overlay with fade animation */
+
 .overlay {
   position: fixed;
   top: 0;
@@ -153,7 +128,7 @@
   animation: fadeIn 0.4s ease;
 }
 
-/* Fade keyframes */
+
 @keyframes fadeIn {
   from {
     background-color: rgba(0, 0, 0, 0);
@@ -163,7 +138,7 @@
   }
 }
 
-/* Optional: fade zoomed image too */
+
 .zoomed {
   animation: zoomFade 0.4s ease;
 }
@@ -178,3 +153,129 @@
     transform: translate(-50%, -50%) scale(5.2);
   }
 }
+
+
+
+
+
+
+/* 
+BACKGROUND LIKE LINKEDIN
+
+.abc{
+  color: black;
+}
+
+
+.header {
+  width: 100vw;
+  min-height: 280px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./LinkedIn.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 40px 0;
+  position: relative;
+  text-align: center;
+}
+
+
+@media (max-width: 767px) {
+  .header {
+    background-image: url('./LinkedIn.png');
+    background-size: contain;
+  }
+}
+
+.profileImage {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.hoverEffect:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.fadeOut {
+  animation: fadeOut 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { background-color: rgba(0, 0, 0, 0); }
+  to { background-color: rgba(0, 0, 0, 0.7); }
+}
+
+@keyframes fadeOut {
+  from { background-color: rgba(0, 0, 0, 0.7); }
+  to { background-color: rgba(0, 0, 0, 0); }
+}
+
+.zoomed {
+  animation: zoomFadeIn 0.3s ease;
+  transform: translate(-50%, -50%) scale(2);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes zoomFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(2);
+  }
+}
+
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 99999;
+}
+
+@media (max-width: 767px) {
+  .closeButton {
+    right: 15px;
+    top: 15px;
+    font-size: 1.8rem;
+  }
+  .profileImage {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+}
+ */

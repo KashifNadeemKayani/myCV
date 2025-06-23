@@ -1,7 +1,32 @@
 .edu {
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 2rem;
+   width: 100vw;
+  background-color: black;
+  color: white;
+  padding: 0.9vmin;
+  padding-bottom: 1.5vmin;
   margin-bottom: 20px;
+}
+
+/* Each education block */
+.eduBlock {
+  position: relative;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+/* Vertical line using pseudo-element */
+@media (min-width: 768px) {
+  .eduBlock:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: 0;
+    height: 80%;
+    width: 2px;
+    background-color: #007bff;
+  }
 }
 
 /* Button Styling */
@@ -9,7 +34,6 @@
   display: inline-block;
   margin-top: 0px;
   margin-bottom: 15px;
-  padding: 10px 16px;
   padding: 10px 16px;
   background-color: #007bff;
   color: white;
@@ -26,29 +50,22 @@
   transform: scale(1.05);
 }
 
-/* Skills (if you still need them) */
-.skillsContainer {
-  margin: 0 auto;
-  width: 70vw;
+/* Mobile horizontal lines (already explained) */
+@media (max-width: 767px) {
+  .eduBlock:not(:last-child)::after {
+    display: none;
+  }
+}
+/* Horizontal line for mobile only */
+.mobileHr {
+  display: block;
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 20px 0;
 }
 
-.skill {
-  width: 100vw;
-  background-color: black;
-  color: white;
-  padding: 0.9vmin;
-  padding-bottom: 1.5vmin;
-}
-
-.progressBarContainer {
-  margin-bottom: 20px;
-}
-
-.progressBar {
-  height: 1.5rem;
-}
-
-.listItem {
-  font-weight: bold;
-  margin-bottom: 10px;
+@media (min-width: 768px) {
+  .mobileHr {
+    display: none;
+  }
 }
