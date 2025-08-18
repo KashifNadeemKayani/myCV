@@ -64,49 +64,49 @@ function Education() {
       <hr />
       <div className="container">
         <div className="row">
-<div className="row">
-  <div className={`col-md-4 ${styles.eduBlock}`}>
-    <h4>Iftikhar Model Academy | Islamabad Pakistan</h4>
-    <p>
-      Science, Matric<br />
-      Secured 998/1100 (90.73%) marks.<br />
-      Apr. 2019 - May. 2021
-    </p>
-    <a href={Matric} target="_blank" rel="noopener noreferrer" className={styles.linkButton}>
-      View Result Card
-    </a>
-    {/* Horizontal line for mobile */}
-    <hr className={styles.mobileHr} />
-  </div>
+          <div className="row">
+            <div className={`col-md-4 ${styles.eduBlock}`}>
+              <h4>Iftikhar Model Academy | Islamabad Pakistan</h4>
+              <p>
+                Science, Matric<br />
+                Secured 998/1100 (90.73%) marks.<br />
+                Apr. 2019 - May. 2021
+              </p>
+              <a href={Matric} target="_blank" rel="noopener noreferrer" className={styles.linkButton}>
+                View Result Card
+              </a>
+              {/* Horizontal line for mobile */}
+              <hr className={styles.mobileHr} />
+            </div>
 
-  <div className={`col-md-4 ${styles.eduBlock}`}>
-    <h4>Pak Turk Maarif International Schools and Colleges | Islamabad Pakistan</h4>
-    <p>
-      Pre-Engineering, FSc.<br />
-      Secured 949/1100 (86.27%) marks.<br />
-      Sep. 2021 - May. 2023
-    </p>
-    <a href={Fsc} target="_blank" rel="noopener noreferrer" className={styles.linkButton}>
-      View Result Card
-    </a>
-    {/* Horizontal line for mobile */}
-    <hr className={styles.mobileHr} />
-  </div>
+            <div className={`col-md-4 ${styles.eduBlock}`}>
+              <h4>Pak Turk Maarif International Schools and Colleges | Islamabad Pakistan</h4>
+              <p>
+                Pre-Engineering, FSc.<br />
+                Secured 949/1100 (86.27%) marks.<br />
+                Sep. 2021 - May. 2023
+              </p>
+              <a href={Fsc} target="_blank" rel="noopener noreferrer" className={styles.linkButton}>
+                View Result Card
+              </a>
+              {/* Horizontal line for mobile */}
+              <hr className={styles.mobileHr} />
+            </div>
 
-  <div className={`col-md-4 ${styles.eduBlock}`}>
-    <h4>National University of Sciences and Technology | Islamabad Pakistan</h4>
-    <p>
-      Mechanical Engineering, Bachelor of Engineering<br />
-      Currently studying with a CGPA of 3.42<br />
-      Sep. 2023 - Present
-    </p>
-    <a href={transcript} target="_blank" rel="noopener noreferrer" className={styles.linkButton}>
-      View Transcript
-    </a>
-  </div>
-</div>
+            <div className={`col-md-4 ${styles.eduBlock}`}>
+              <h4>National University of Sciences and Technology | Islamabad Pakistan</h4>
+              <p>
+                Mechanical Engineering, Bachelor of Engineering<br />
+                Currently studying with a CGPA of 3.39<br />
+                Sep. 2023 - Present
+              </p>
+              <a href={transcript} target="_blank" rel="noopener noreferrer" className={styles.linkButton}>
+                View Transcript
+              </a>
+            </div>
+          </div>
 
-</div>
+        </div>
       </div>
     </section>
   );
