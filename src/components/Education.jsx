@@ -65,9 +65,9 @@
 
 
 import { useState, useEffect } from "react";
-import Matric from "./Matric.jpg";
-import Fsc from "./HSSC.jpg";
-import transcript from "./Transcript.png";
+import Matric from "./Pic/Matric.jpg";
+import Fsc from "./Pic/HSSC.jpg";
+import transcript from "./Pic/Transcript.png";
 import styles from "./Education.module.css";
 
 function Education() {

@@ -20,13 +20,13 @@ function Footer() {
       <a href="https://wa.me/+923343288223" className="text-white mx-3" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faWhatsapp} size="2x" />
         </a>
-        <a href="https://www.instagram.com/kashif_kayani_?igsh=MXhnb2pweDc2eDNucQ==" className="text-white mx-3" target="_blank" rel="noopener noreferrer">
+        {/* <a href="https://www.instagram.com/kashif_kayani_?igsh=MXhnb2pweDc2eDNucQ==" className="text-white mx-3" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faInstagram} size="2x" />
         </a>
         <a href="https://www.facebook.com/profile.php?id=100069567382242&mibextid=ZbWKwL" className="text-white mx-3" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faFacebook} size="2x" />
         </a>
-        
+         */}
      
       </div>
     </footer>

@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from "./Header.module.css";
-import pic from './picccc.jpg';
+import pic from './Pic/picccc.jpg';
 
 function Header() {
   const [isZoomed, setIsZoomed] = useState(false);

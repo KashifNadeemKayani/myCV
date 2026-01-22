@@ -9,3 +9,16 @@
 .address {
   padding-left: 10px;
 }
+.link {
+  color: #0d6efd;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.address {
+  padding-left: 10px;
+}

@@ -35,3 +35,96 @@
     padding: 0 5vw;
   }
 }
+
+
+/* Popup overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  background: white;
+  padding: 14px;
+  max-width: 95vw;
+  max-height: 95vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 10px;
+  border: 3px solid #007bff;
+}
+
+/* Fit image horizontally */
+.popup img {
+  max-width: 100%;
+  max-height: 85vh;   /* KEY: fits portrait height */
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+
+/* Close button */
+.closeBtn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #007bff;
+  color: white;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.closeBtn:hover {
+  background-color: #0056b3;
+}
+.certificateBtn {
+  margin-top: 6px;
+  padding: 6px 14px;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.certificateBtn:hover {
+  background-color: #084298;
+  transform: scale(1.05);
+}
+
+.liveBtn {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 6px 14px;
+  background-color: #198754; /* green = live */
+  color: white;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.liveBtn:hover {
+  background-color: #146c43;
+  transform: scale(1.05);
+}

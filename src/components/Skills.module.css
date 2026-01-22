@@ -1,3 +1,7 @@
+/* =========================
+   EXISTING SKILLS STYLES
+   ========================= */
+
 .skillsContainer {
   margin: 0 auto;
   width: 70vw;
@@ -22,4 +26,96 @@
 .listItem {
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+/* =========================
+   POPUP (CERTIFICATE VIEWER)
+   ========================= */
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  background: white;
+  padding: 14px;
+  max-width: 90vw;
+  max-height: 90vh;
+
+  /* Scroll only when needed */
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  border-radius: 10px;
+  border: 3px solid #007bff;
+
+  /* Hide scrollbar visually */
+  scrollbar-width: none;          /* Firefox */
+  -ms-overflow-style: none;       /* IE / Edge */
+}
+
+/* Chrome / Safari */
+.popup::-webkit-scrollbar {
+  display: none;
+}
+
+/* Portrait certificate handling */
+.popup img {
+  max-width: 100%;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Close button */
+.closeBtn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #007bff;
+  color: white;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.closeBtn:hover {
+  background-color: #0056b3;
+}
+/* =========================
+   MOBILE ALIGNMENT FIX
+   ========================= */
+
+@media (max-width: 768px) {
+  .skillsContainer {
+    width: 100%;
+    padding: 0 5vw;   /* MATCHES projectSection */
+  }
+}
+.certBadge {
+  margin-left: 10px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 12px;
+  vertical-align: middle;
 }
