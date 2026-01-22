@@ -1,7 +1,7 @@
+/* Section heading */
 .edu {
-  /* font-weight: bold; */
   font-size: 2rem;
-   width: 100vw;
+  width: 100vw;
   background-color: black;
   color: white;
   padding: 0.9vmin;
@@ -9,54 +9,46 @@
   margin-bottom: 20px;
 }
 
-/* Each education block */
+/* Education blocks */
 .eduBlock {
   position: relative;
-  padding: 0 20px;
+  padding: 0 30px;
   margin-bottom: 30px;
 }
 
-/* Vertical line using pseudo-element */
+/* Desktop vertical divider */
 @media (min-width: 768px) {
   .eduBlock:not(:last-child)::after {
     content: "";
     position: absolute;
-    top: 10%;
+    top: 0;
     right: 0;
-    height: 80%;
+    height: 100%;
     width: 2px;
     background-color: #007bff;
+    opacity: 0.9;
   }
 }
 
-/* Button Styling */
+/* Button */
 .linkButton {
-  display: inline-block;
-  margin-top: 0px;
-  margin-bottom: 15px;
-  padding: 10px 16px;
+  margin-top: 10px;
+  padding: 10px 18px;
   background-color: #007bff;
   color: white;
-  text-decoration: none;
   border-radius: 6px;
+  border: none;
   font-weight: 500;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
 .linkButton:hover {
   background-color: #0056b3;
-  text-decoration: none;
-  color: white;
   transform: scale(1.05);
 }
 
-/* Mobile horizontal lines (already explained) */
-@media (max-width: 767px) {
-  .eduBlock:not(:last-child)::after {
-    display: none;
-  }
-}
-/* Horizontal line for mobile only */
+/* Mobile divider */
 .mobileHr {
   display: block;
   border: none;
@@ -68,4 +60,89 @@
   .mobileHr {
     display: none;
   }
+}
+
+@media (max-width: 767px) {
+  .eduBlock::after {
+    display: none;
+  }
+}
+
+/* ===== POPUP SYSTEM ===== */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  background: white;
+  padding: 14px;
+  max-width: 95vw;
+  max-height: 95vh;
+  overflow-y: auto;     /* vertical scroll only */
+  overflow-x: hidden;  /* NO horizontal scroll */
+  border-radius: 10px;
+  border: 3px solid #007bff;
+}
+
+/* Image fits horizontally */
+.popup img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+/* Message popup */
+.popupMsg {
+  position: relative;
+  background: white;
+  padding: 25px;
+  max-width: 420px;
+  border-radius: 10px;
+  border: 3px solid #007bff;
+  text-align: center;
+}
+
+.popupMsg h4 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.popupMsg p {
+  font-size: 1rem;
+  white-space: pre-line;
+}
+
+/* Close button (INSIDE corner) */
+.closeBtn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #007bff;
+  color: white;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.closeBtn:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
 }
