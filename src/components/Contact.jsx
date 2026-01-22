@@ -30,7 +30,7 @@ function Contact() {
         <p className={styles.address}>
           <b>Address:</b>{" "}
           <a
-            href="https://maps.app.goo.gl/VUHAvHQgsbAgzvW39"
+            href="https://goo.gl/maps/Xn98vh1gpyv9Vhmr8"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.link}
